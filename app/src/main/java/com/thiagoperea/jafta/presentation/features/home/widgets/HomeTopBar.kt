@@ -1,3 +1,5 @@
+package com.thiagoperea.jafta.presentation.features.home.widgets
+
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.border
@@ -24,6 +26,7 @@ import androidx.compose.ui.unit.dp
 import com.thiagoperea.jafta.R
 import com.thiagoperea.jafta.internal.ui.theme.Dark50
 import com.thiagoperea.jafta.internal.ui.theme.JAFTATheme
+import com.thiagoperea.jafta.internal.ui.theme.JAFTATypography
 import com.thiagoperea.jafta.internal.ui.theme.Light60
 import com.thiagoperea.jafta.internal.ui.theme.Light80
 import com.thiagoperea.jafta.internal.ui.theme.Violet100
@@ -75,7 +78,7 @@ fun HomeTopBar() {
                 color = Light60
             ),
         ) {
-            Text("October")
+            Text("October", style = JAFTATypography.medium14)
         }
 
         IconButton(

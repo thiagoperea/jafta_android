@@ -1,4 +1,4 @@
-package com.thiagoperea.jafta.presentation.designsystem
+package com.thiagoperea.jafta.presentation.features.home.widgets
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
@@ -20,6 +20,7 @@ import androidx.compose.ui.unit.dp
 import com.thiagoperea.jafta.R
 import com.thiagoperea.jafta.internal.ui.theme.GrayUnselectedMenu
 import com.thiagoperea.jafta.internal.ui.theme.JAFTATheme
+import com.thiagoperea.jafta.internal.ui.theme.JAFTATypography
 import com.thiagoperea.jafta.internal.ui.theme.Light80
 import com.thiagoperea.jafta.internal.ui.theme.Violet100
 
@@ -52,7 +53,7 @@ fun HomeBottomBar() {
 
             BottomNavigationItem(
                 icon = { Icon(painterResource(iconRes), contentDescription = description) },
-                label = { Text(description) },
+                label = { Text(description, style = JAFTATypography.medium10) },
                 alwaysShowLabel = true,
                 selected = index == selectedMenuIndex.intValue,
                 onClick = { selectedMenuIndex.intValue = index },

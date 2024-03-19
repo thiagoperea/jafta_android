@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">JAFTA</string>
+    <string name="salary">Salary</string>
+    <string name="food">Food</string>
+    <string name="transport">Transport</string>
+    <string name="health">Health</string>
+    <string name="investment">Investment</string>
+    <string name="other">Other</string>
 </resources>
